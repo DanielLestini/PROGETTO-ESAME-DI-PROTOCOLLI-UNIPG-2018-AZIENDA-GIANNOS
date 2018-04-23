@@ -1,0 +1,14 @@
+#DIRECTORY = /etc/aliases
+#sendmail non usa questo file direttamente, ma questo viene prima processato con il comando "newaliases" o "sendmail -bi"
+
+//tramite "aliases" le mail mandate ad un indirizzo specifico vengono ridirezionate ad un'altra parte.
+//Pertanto in tale file vengono forniti degli alias ed i relativi indirizzi assegnati ad essi.
+
+# Alias amministratori
+admin_ufficio_legale: daniel.lestini@giannOS.it
+admin_uffici_amministrazione: daniel.lestini@giannOS.it
+admin_uffici_programmazione: daniel.lestini@giannOS.it
+admin_uffici_sede centrale: daniel.lestini@giannOS.it
+
+# Mailing list per gli amministratori
+admin: daniel.lestini@giannOS.it

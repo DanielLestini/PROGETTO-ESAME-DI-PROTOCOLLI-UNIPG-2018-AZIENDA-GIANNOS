@@ -1,0 +1,13 @@
+#DIRECTORY = /etc/rc.local
+
+### Configurazione interfacce
+
+//uffici studio amministrazione(locale)
+ifconfig eth1 192.168.5.255 netmask 255.255.255.0 broadcast 192.168.5.255
+
+//verso router (b)
+ifconfig eth2 192.168.0.141 netmask 255.255.255.0 broadcast 192.168.0.255
+
+//verso router (d)
+ifconfig eth4 192.168.0.142 netmask 255.255.255.0 broadcast 192.168.0.255
+

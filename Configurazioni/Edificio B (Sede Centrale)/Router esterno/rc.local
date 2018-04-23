@@ -1,0 +1,12 @@
+#DIRECTORY = /etc/rc.local
+
+### Configurazione interfacce
+
+//DMZ (locale)
+ifconfig eth1 192.168.1.155 netmask 255.255.255.0 broadcast 192.168.1.255
+
+//verso internet
+ifconfig eth0 143.232.1.89 netmask 255.255.255.0 broadcast 143.232.1.255
+
+route add default gw 192.168.1.255
+

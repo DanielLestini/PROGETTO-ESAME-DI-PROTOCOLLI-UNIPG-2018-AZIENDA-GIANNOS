@@ -1,0 +1,21 @@
+
+$TTL 86400 
+@	IN	SOA	dns.giannOS.it.	daniel.lestini@giannOS.it (
+				2018112501   ; serial
+				36000        ; refresh after 10 hours
+				3600         ; retry after 1 hour
+				3600000      ; expire after 1000 hours
+				36000 )      ; default ttl, 10 hours
+# DNS e mail
+	IN	NS	dns.giannOS.it
+	IN	NS	dns.sede_centrale.giannOS.it
+	IN	MX	10 mail.giannOS.it
+
+# Servers
+mail	IN	A	192.168.1.2
+web	IN	A	192.168.1.3
+dns	IN	A	192.168.1.4
+
+# Routers
+introuter	IN	A	192.168.1.255
+extrouter	IN	A	192.168.1.155

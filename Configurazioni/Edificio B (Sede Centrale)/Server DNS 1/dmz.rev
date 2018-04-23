@@ -1,0 +1,23 @@
+# Risoluzione inversa DMZ
+
+$TTL 86400
+@	IN	SOA	dns.giannOS.it.	daniel.lestini@giannOS.it (
+				2018112501   ; serial#
+				36000        ; refresh after 10 hours
+				3600         ; retry after 1 hour
+				3600000      ; expire after 1000 hours
+				36000 )      ; default ttl, 10 hours
+# DNS e mail
+	IN	NS	dns.giannOS.it
+	IN	NS	dns.sedecentrale.giannOS.it
+	IN	MX	10 mail.giannOS.it
+
+# Servers
+4	IN	PTR	dns.giannOS.it.
+3	IN	PTR	www.giannOS.it.
+2	IN	MX	mail.giannOS.it.
+
+
+# Routers
+255	IN	PTR	introuter.giannOS.it.
+155	IN	PTR	extrouter.giannOS.it.

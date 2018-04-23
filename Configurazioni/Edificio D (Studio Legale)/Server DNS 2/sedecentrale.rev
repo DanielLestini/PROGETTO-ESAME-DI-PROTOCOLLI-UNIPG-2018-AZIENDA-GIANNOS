@@ -1,0 +1,19 @@
+$TTL 1D
+@	IN	SOA	dns.studiolegale.giannOS.it. daniel.lestini@giannOS.it (
+				2018112501   ; serial
+				3H           ; refresh
+				1H           ; retry
+				1W           ; expire
+				1D )         ; minimum
+# DNS e mail
+    	IN  	NS  	dns.studiolegale.giannOS.it
+	IN	MX	10 mail.giannOS.it
+
+# Routers
+255	IN	PTR	router.sedecentrale.giannOS.it.
+
+# Hosts
+3   	IN  	PTR 	host.sedecentrale.giannOS.it.
+
+# Server App Az
+2	IN	PTR	az.sedecentrale.giannOS.it.

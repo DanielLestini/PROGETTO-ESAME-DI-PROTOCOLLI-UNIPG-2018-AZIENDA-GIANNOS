@@ -1,0 +1,13 @@
+#DIRECTORY = /etc/rc.local
+
+### Configurazione interfacce
+
+//uffici sede legale (locale)
+ifconfig eth0 192.168.3.255 netmask 255.255.255.0 broadcast 192.168.3.255
+
+//verso router (b)
+ifconfig eth1 192.168.0.131 netmask 255.255.255.0 broadcast 192.168.0.255
+
+//verso router (c)
+ifconfig eth1 192.168.0.132 netmask 255.255.255.0 broadcast 192.168.0.255
+
