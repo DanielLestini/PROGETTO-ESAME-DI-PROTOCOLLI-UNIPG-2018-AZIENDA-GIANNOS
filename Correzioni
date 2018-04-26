@@ -2,3 +2,4 @@ Le distanze di 50 metri e 100 metri tra gli edifici sono al contrario nell'immag
 Al posto del doppino telefonico mettere la fibra ottica per le distanze di 3km, mentre per quelle corte (50 e 100 metri) basta passare un cavo ethernet, o in alternativa il cavo stp.
 Nel file del DNS1 sostituire "web" con www, la porta e cname altrimenti non funziona.
 Nel file di configurazione del server di backup togliere "all" e sostituirlo con regole stringenti e la porta appropriata.
+in tutti i file gated sostituire proto direct interface 192.168.4.255 con 192.168.numerosottorete.NON-255 perchè questo è riservato per il broadcast  
